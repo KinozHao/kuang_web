@@ -17,7 +17,7 @@ import java.io.PrintWriter;
 public class AnotherServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //设置响应信息
+        //设置响应头信息
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
 
