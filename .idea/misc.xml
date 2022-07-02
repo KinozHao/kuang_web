@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
-    <file type="web" url="file://$PROJECT_DIR$/Request" />
-    <file type="web" url="file://$PROJECT_DIR$/Response" />
-    <file type="web" url="file://$PROJECT_DIR$/Servlet-02" />
+    <file type="web" url="file://$PROJECT_DIR$/A-HelloServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/B-Servlet-02" />
+    <file type="web" url="file://$PROJECT_DIR$/C-Response" />
+    <file type="web" url="file://$PROJECT_DIR$/D-Request" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
