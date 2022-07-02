@@ -1,4 +1,4 @@
-package topII.datas;
+package topII.context_us;
 
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
@@ -17,7 +17,7 @@ import java.sql.Statement;
  * @Date 2022/7/1 - 17:23
  * @apiNote Context一般用于获取上下文连接
  */
-public class ContextBasic extends HttpServlet {
+public class DataShare extends HttpServlet {
     @Test
     // TODO: 2022/7/1 如何让从数据库中读取到的数据通过Context直接在web中共享?
     public void SqlTest(){

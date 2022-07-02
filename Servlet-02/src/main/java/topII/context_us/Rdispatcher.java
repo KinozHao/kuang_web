@@ -1,5 +1,6 @@
-package topII.servlet;
+package topII.context_us;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -7,27 +8,26 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * @author kinoz
- * @Date 2022/7/1 - 20:10
- * @apiNote 此类用于获取Context里的共享数据
+ * @Date 2022/7/2 - 10:16
+ * @apiNote Request dispatcher 请求转发
  */
-public class ThirdServlet extends HttpServlet {
+public class Rdispatcher extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
-        ServletContext svt = this.getServletContext();
-        String username = (String) svt.getAttribute("username");
-        PrintWriter out = resp.getWriter();
-        out.println(username);
-
+        resp.setCharacterEncoding("utf-8");
+        ServletContext sct = this.getServletContext();
+        // 转发的请求路径
+        RequestDispatcher rd = sct.getRequestDispatcher("/data");
+        //发出上面的指令,通过本类会直接跳到/data资源页面下
+        rd.forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        doGet(req,resp);
     }
 }
