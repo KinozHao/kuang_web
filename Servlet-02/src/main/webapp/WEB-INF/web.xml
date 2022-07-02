@@ -11,19 +11,19 @@
         <!--数据库连接参数-->
         <param-value>jdbc:mysql://localhost:3306/school</param-value>
     </context-param>
-    <!--获取数据类-->
+    <!--test下的data share获取数据类-->
     <servlet>
         <servlet-name>Review</servlet-name>
-        <servlet-class>topII.datashare.ReviewServlet</servlet-class>
+        <servlet-class>datashare.ReviewServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Review</servlet-name>
-        <url-pattern>/review</url-pattern>
+        <url-pattern>/review1</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>Review2</servlet-name>
-        <servlet-class>topII.datashare.AnotherServlet</servlet-class>
+        <servlet-class>datashare.AnotherServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Review2</servlet-name>
@@ -31,15 +31,16 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>Review3</servlet-name>
-        <servlet-class>topII.datashare.ThirdServlet</servlet-class>
+        <servlet-class>datashare.ThirdServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Review3</servlet-name>
         <url-pattern>/review3</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>rd</servlet-name>
-        <servlet-class>topII.context_us.Rdispatcher</servlet-class>
+        <servlet-class>context_us.Rdispatcher</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>rd</servlet-name>
@@ -51,7 +52,7 @@
     <!--共享数据类-->
     <servlet>
         <servlet-name>data</servlet-name>
-        <servlet-class>topII.context_us.DataShare</servlet-class>
+        <servlet-class>context_us.DataShare</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -60,7 +61,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>data2</servlet-name>
-        <servlet-class>topII.context_us.InitParam</servlet-class>
+        <servlet-class>context_us.InitParam</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>data2</servlet-name>
@@ -69,7 +70,7 @@
 <!--获取properties资源-->
     <servlet>
         <servlet-name>prop</servlet-name>
-        <servlet-class>topII.context_us.GetServlet</servlet-class>
+        <servlet-class>context_us.GetServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>prop</servlet-name>
