@@ -11,7 +11,17 @@
         <!--数据库连接参数-->
         <param-value>jdbc:mysql://localhost:3306/school</param-value>
     </context-param>
-    <!--test下的data share获取数据类-->
+    <!--获取初始化参数-->
+    <servlet>
+        <servlet-name>data2</servlet-name>
+        <servlet-class>context_us.InitParam</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>data2</servlet-name>
+        <url-pattern>/data2</url-pattern>
+    </servlet-mapping>
+
+    <!--这些路径用于获取共享数据-->
     <servlet>
         <servlet-name>Review</servlet-name>
         <servlet-class>datashare.ReviewServlet</servlet-class>
@@ -38,39 +48,30 @@
         <url-pattern>/review3</url-pattern>
     </servlet-mapping>
 
+    <!--请求转发-->
     <servlet>
         <servlet-name>rd</servlet-name>
-        <servlet-class>topII.context_us.Rdispatcher</servlet-class>
+        <servlet-class>context_us.Rdispatcher</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>rd</servlet-name>
         <url-pattern>/rd</url-pattern>
     </servlet-mapping>
 
-
-
     <!--共享数据类-->
     <servlet>
         <servlet-name>data</servlet-name>
-        <servlet-class>topII.context_us.DataShare</servlet-class>
+        <servlet-class>context_us.DataShare</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>data</servlet-name>
         <url-pattern>/data</url-pattern>
     </servlet-mapping>
-    <servlet>
-        <servlet-name>data2</servlet-name>
-        <servlet-class>topII.context_us.InitParam</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>data2</servlet-name>
-        <url-pattern>/data2</url-pattern>
-    </servlet-mapping>
-<!--获取properties资源-->
+
+    <!--获取properties资源-->
     <servlet>
         <servlet-name>prop</servlet-name>
-        <servlet-class>topII.context_us.GetServlet</servlet-class>
+        <servlet-class>context_us.GetServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>prop</servlet-name>

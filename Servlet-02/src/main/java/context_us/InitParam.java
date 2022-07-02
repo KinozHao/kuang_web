@@ -17,9 +17,12 @@ import java.io.PrintWriter;
 public class InitParam extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //设置响应头
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
+        //获取context对象
         ServletContext sct = this.getServletContext();
+        //获取xml中配置的初始参数
         String ipr = sct.getInitParameter("jdbc");
         PrintWriter out = resp.getWriter();
         out.println(ipr);
