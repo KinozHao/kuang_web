@@ -12,6 +12,7 @@
         <module>HelloServlet</module>
         <module>Servlet-02</module>
         <module>Response</module>
+        <module>Request</module>
     </modules>
     <dependencies>
         <dependency>

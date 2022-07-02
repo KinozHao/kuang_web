@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/Request" />
     <file type="web" url="file://$PROJECT_DIR$/Response" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet-02" />
   </component>

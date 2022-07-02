@@ -5,10 +5,18 @@
     <file url="file://$PROJECT_DIR$/HelloServlet/src/main/java/database/DbConnect.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HelloServlet/src/main/java/database/UtilsTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HelloServlet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Request/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Request/src/main/java/qingqiu/LoginCdx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Response/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Response/src/main/java/xiangying/FileDownload.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Response/src/main/java/xiangying/RandomCode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Response/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Response/src/main/resources/DB.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-02/src/main/java/datashare/AnotherServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-02/src/main/java/datashare/ReviewServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-02/src/main/java/datashare/ThirdServlet.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Servlet-02/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

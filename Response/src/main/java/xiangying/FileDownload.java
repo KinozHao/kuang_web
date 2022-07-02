@@ -14,43 +14,43 @@ import java.net.URLEncoder;
 /**
  * @author kinoz
  * @Date 2022/7/2 - 14:30
- * @apiNote Ê¹ÓÃResponseÊµÏÖÏÂÔØÎÄ¼şĞ§¹û
+ * @apiNote ä½¿ç”¨Responseå®ç°ä¸‹è½½æ–‡ä»¶æ•ˆæœ
  */
 public class FileDownload extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //ÉèÖÃÏìÓ¦Í·,·ÀÖ¹ÂÒÂë
+        //è®¾ç½®å“åº”å¤´,é˜²æ­¢ä¹±ç 
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
 
-        //1.Á½ÖÖ·½Ê½»ñµÃÎÄ¼şÂ·¾¶
-        String localPath = "E:\\JavaCode\\Maven_Study\\Response\\target\\classes\\ÖĞ¹ú´úÂë.jpg";
-        //Í¨¹ıcontext»ñÈ¡µÄÂ·¾¶ÔÚtomcat°üÏÂ£¬²¢·ÇÎÒÃÇµÄwebÄ¿Â¼ÏÂ£¡
-        //String localPath = this.getServletContext().getRealPath("/ÖĞ¹ú´úÂë.jpg");
-        System.out.println("»ñÈ¡ÎÄ±¾Â·¾¶"+localPath);
+        //1.ä¸¤ç§æ–¹å¼è·å¾—æ–‡ä»¶è·¯å¾„
+        String localPath = "E:\\JavaCode\\Maven_Study\\Response\\target\\classes\\ä¸­å›½ä»£ç .jpg";
+        //é€šè¿‡contextè·å–çš„è·¯å¾„åœ¨tomcatåŒ…ä¸‹ï¼Œå¹¶éæˆ‘ä»¬çš„webç›®å½•ä¸‹ï¼
+        //String localPath = this.getServletContext().getRealPath("/ä¸­å›½ä»£ç .jpg");
+        System.out.println("è·å–æ–‡æœ¬è·¯å¾„"+localPath);
 
-        //2.ÏÂÔØµÄÎÄ¼şÃûÊÇÉ¶ Í¨¹ıString·½·¨½ØÈ¡
+        //2.ä¸‹è½½çš„æ–‡ä»¶åæ˜¯å•¥ é€šè¿‡Stringæ–¹æ³•æˆªå–
         String filename = localPath.substring(localPath.lastIndexOf("\\")+1);
 
-        //3.ÈÃä¯ÀÀÆ÷Ö§³Ö(Content-Disposition)ÎÒÃÇÒªÏÂÔØµÄ¶«Î÷,Ê¹ÓÃURLEncoderÉèÖÃÎÄ¼şÃû³Æ²»ÂÒÂë
+        //3.è®©æµè§ˆå™¨æ”¯æŒ(Content-Disposition)æˆ‘ä»¬è¦ä¸‹è½½çš„ä¸œè¥¿,ä½¿ç”¨URLEncoderè®¾ç½®æ–‡ä»¶åç§°ä¸ä¹±ç 
         resp.setHeader("Content-Disposition","attachment;filename="+ URLEncoder.encode(filename,"utf-8"));
 
-        //4.ÏÂÔØÎÄ¼şµÄÊäÈëÁ÷
+        //4.ä¸‹è½½æ–‡ä»¶çš„è¾“å…¥æµ
         FileInputStream fsm = new FileInputStream(localPath);
 
-        //5.»ñÈ¡Êä³öÁ÷¶ÔÏó
+        //5.è·å–è¾“å‡ºæµå¯¹è±¡
         ServletOutputStream serverOSM = resp.getOutputStream();
 
-        //6.»º³åÇø
+        //6.ç¼“å†²åŒº
         int len = 0;
         byte[] bytes = new byte[1024];
-        //°ÑÎÄ¼şĞ´Èë»º³åÇø£¬Ê¹ÓÃÊä³öÁ÷°ÑÊı¾İ·¢ËÍµ½¿Í»§¶Ë
+        //æŠŠæ–‡ä»¶å†™å…¥ç¼“å†²åŒºï¼Œä½¿ç”¨è¾“å‡ºæµæŠŠæ•°æ®å‘é€åˆ°å®¢æˆ·ç«¯
         while ((len = fsm.read(bytes)) != -1){
             serverOSM.write(bytes,0,len);
         }
 
 
-        //7.ÊÍ·ÅÁ÷
+        //7.é‡Šæ”¾æµ
         fsm.close();
         serverOSM.close();
 

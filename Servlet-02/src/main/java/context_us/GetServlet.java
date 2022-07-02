@@ -21,11 +21,14 @@ public class GetServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
+
         ServletContext sct = this.getServletContext();
-        //铜鼓context获取一个流对象，指定配置文件在web中的路径
+        //1.通过context获取一个流对象，指定配置文件在web中的路径
         InputStream in = sct.getResourceAsStream("/WEB-INF/classes/jdbc.properties");
+        //2.读取流文件
         Properties prop = new Properties();
         prop.load(in);
+        //3.输出到前端页面
         PrintWriter out = resp.getWriter();
         out.println(prop.getProperty("driverClassName"));
         out.println(prop.getProperty("username"));
