@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="E-Cookie_Session:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/E_Cookie_Session_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="E-Cookie_Session" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.11" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:10.0.7" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="E-Cookie_Session/web/Web" />
+    </root>
+  </artifact>
+</component>

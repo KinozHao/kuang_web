@@ -9,6 +9,7 @@
         <module name="B-Context" />
         <module name="A-HelloServlet" />
         <module name="C-Response" />
+        <module name="E-Cookie_Session" />
         <module name="D-Request" />
       </profile>
     </annotationProcessing>

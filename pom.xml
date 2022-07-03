@@ -15,6 +15,7 @@
         <module>B-Context</module>
         <module>C-Response</module>
         <module>D-Request</module>
+        <module>E-Cookie_Session</module>
     </modules>
 
     <!--依赖jar包-->

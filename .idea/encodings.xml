@@ -17,6 +17,8 @@
     <file url="file://$PROJECT_DIR$/C-Response/src/main/webapp/index.jsp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java/qingqiu/LoginCdx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/E-Cookie_Session/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/E-Cookie_Session/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
