@@ -22,10 +22,11 @@ public class FileDownload extends HttpServlet {
         resp.setCharacterEncoding("utf-8");
 
         //1.两种方式获得文件路径
-        String localPath = "E:\\JavaCode\\Maven_Study\\Response\\target\\classes\\中国代码.jpg";
+        String localPath = "E:\\JavaCode\\Maven_Study\\C-Response\\target\\classes\\中国代码.jpg";
+        System.out.println("获取文本路径"+localPath);
         //通过context获取的路径在tomcat包下，并非我们的web目录下！
         //String localPath = this.getServletContext().getRealPath("/中国代码.jpg");
-        System.out.println("获取文本路径"+localPath);
+        //System.out.println("获取文本路径"+this.getServletContext().getRealPath("/中国代码.jpg"));
 
         //2.下载的文件名是啥 通过String方法截取
         String filename = localPath.substring(localPath.lastIndexOf("\\")+1);

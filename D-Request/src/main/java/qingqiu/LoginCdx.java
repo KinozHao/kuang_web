@@ -15,7 +15,7 @@ import java.util.Arrays;
  */
 public class LoginCdx extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //防止页面乱码
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html");
@@ -37,5 +37,6 @@ public class LoginCdx extends HttpServlet {
         System.out.println(pass);
         System.out.println(Arrays.toString(hobbies));
         System.out.println("=======================");
+
     }
 }

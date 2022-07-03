@@ -1,9 +1,7 @@
 package database;
 
 import database.utils.dbcp_utils;
-import org.junit.Test;
 
-import java.lang.annotation.Target;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
