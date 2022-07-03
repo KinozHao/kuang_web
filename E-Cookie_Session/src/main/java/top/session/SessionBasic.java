@@ -31,7 +31,7 @@ public class SessionBasic extends HttpServlet {
         String id = session.getId();
         PrintWriter writer = resp.getWriter();
 
-        //如果sessionId存在的话给出提示/不存在也给出提示
+        //通过inNew判断此session的新旧
         if (session.isNew()){
             writer.print("create success!"+id);
         }else {
