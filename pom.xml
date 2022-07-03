@@ -8,12 +8,16 @@
     <artifactId>Maven_Study</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <!--子模块-->
     <modules>
-        <module>HelloServlet</module>
-        <module>Servlet-02</module>
-        <module>Response</module>
-        <module>Request</module>
+        <module>A-HelloServlet</module>
+        <module>B-Context</module>
+        <module>C-Response</module>
+        <module>D-Request</module>
     </modules>
+
+    <!--依赖jar包-->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -37,6 +41,7 @@
         </dependency>
     </dependencies>
 
+    <!--因为Maven默认jdk为1.5 设置为当前jdk版本11 用于maven识别版本-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>

@@ -31,7 +31,6 @@ public class LoginCdx extends HttpServlet {
         req.getRequestDispatcher("/success.jsp").forward(req,resp);
 
 
-
         //Console feedback
         System.out.println("=======USER INFO======");
         System.out.println(name);
