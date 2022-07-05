@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/C-Response" />
     <file type="web" url="file://$PROJECT_DIR$/D-Request" />
     <file type="web" url="file://$PROJECT_DIR$/E-Cookie_Session" />
+    <file type="web" url="file://$PROJECT_DIR$/F-JSPage" />
     <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
   </component>
   <component name="MavenProjectsManager">
@@ -17,7 +18,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="jdk11.0.11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

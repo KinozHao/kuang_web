@@ -23,7 +23,7 @@ public class SessionGet extends HttpServlet {
 
         //通过session的attribute方法以键值对方法获取参数
         HttpSession session = req.getSession();
-        Object name = session.getAttribute("name");
+        String name = (String) session.getAttribute("name");
 
         //把获取的数据响应到前端页面
         PrintWriter out = resp.getWriter();

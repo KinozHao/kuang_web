@@ -26,6 +26,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>error</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <!--当为/*时候 即输入不存在web资源自动跳转此页面-->
+    <url-pattern>/404</url-pattern>
   </servlet-mapping>
 </web-app>

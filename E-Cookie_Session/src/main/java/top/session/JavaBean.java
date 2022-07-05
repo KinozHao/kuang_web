@@ -1,5 +1,6 @@
 package top.session;
 
+
 /**
  * @author kinoz
  * @Date 2022/7/3 - 19:23
@@ -37,4 +38,5 @@ public class JavaBean {
                 ", age=" + age +
                 '}';
     }
+
 }
