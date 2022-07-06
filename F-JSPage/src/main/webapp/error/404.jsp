@@ -6,6 +6,6 @@
     <title>Title</title>
 </head>
 <body>
-    <img src=${pageContext.request.contextPath}/img/404img.jpg>
+    <img src=${pageContext.request.contextPath}/img/404error.jpg alt="404error">
 </body>
 </html>

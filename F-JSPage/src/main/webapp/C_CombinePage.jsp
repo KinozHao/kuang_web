@@ -2,18 +2,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>C_CombinePage.jsp</title>
 </head>
 <body>
     <%--@include会将两个页面合二为一--%>
     <%@include file="common/header.jsp"%>
-    <h1>网页主体0</h1>
+    <h2>我是用的是jsp指令集</h2>
     <%@include file="common/footer.jsp"%>
     <hr>
 
     <%--jsp标签--%>
     <jsp:include page="common/header.jsp"/>
-    <h1>网页主体0</h1>
+    <h2>我是用的是jsp标签</h2>
     <jsp:include page="common/footer.jsp"/>
 </body>
 </html>
