@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author kinoz
@@ -32,7 +33,7 @@ public class FileDownload extends HttpServlet {
         String filename = localPath.substring(localPath.lastIndexOf("\\")+1);
 
         //3.让浏览器支持(Content-Disposition)我们要下载的东西,使用URLEncoder设置文件名称不乱码
-        resp.setHeader("Content-Disposition","attachment;filename="+ URLEncoder.encode(filename,"utf-8"));
+        resp.setHeader("Content-Disposition","attachment;filename="+ URLEncoder.encode(filename, StandardCharsets.UTF_8));
 
         //4.下载文件的输入流
         FileInputStream fsm = new FileInputStream(localPath);

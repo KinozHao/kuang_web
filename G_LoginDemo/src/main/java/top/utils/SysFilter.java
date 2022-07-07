@@ -1,15 +1,15 @@
-package top.servlet;
+package top.utils;
 
 import jakarta.servlet.*;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import top.param_static.Sessions;
 
 import java.io.IOException;
 
 /**
  * @author kinoz
- * @Date 2022/7/7 - 16:34
+ * @Date 2022/7/7 - 19:30
  * @apiNote
  */
 public class SysFilter implements Filter {
@@ -19,22 +19,21 @@ public class SysFilter implements Filter {
     }
 
     @Override
-    public void destroy() {
-
-    }
-
-    @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
+        //1.把形参转换为我们需要的类型
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
 
-        //session为空直接跳转到error
-        if (req.getSession().getAttribute("USER_SESSION") == null){
-            resp.sendRedirect("/error.jsp");
+        //2.若session值为空就跳转失败页面
+        if (req.getSession().getAttribute(Sessions.var) == null){
+            resp.sendRedirect("/failed.jsp");
         }
-
-
+        //3. //后面可能会有其他的过滤器，保过滤器继续同行
         filterChain.doFilter(servletRequest,servletResponse);
+    }
+
+    @Override
+    public void destroy() {
+
     }
 }

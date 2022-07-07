@@ -10,6 +10,7 @@
         <module name="D-Request" />
         <module name="B-Context" />
         <module name="C-Response" />
+        <module name="G_LoginDemo" />
         <module name="E-Cookie_Session" />
         <module name="F-JSPage" />
         <module name="A-HelloServlet" />

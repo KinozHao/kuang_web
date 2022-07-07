@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="G_Filter:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/G_Filter_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/G_Filter/target</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="G_Filter/web/Web" />
       <element id="directory" name="WEB-INF">

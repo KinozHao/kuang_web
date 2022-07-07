@@ -13,7 +13,7 @@ import java.io.PrintWriter;
  * @Date 2022/7/7 - 11:06
  * @apiNote
  */
-public class ShowInfo extends HttpServlet {
+public class Charset extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //解决乱码问题
