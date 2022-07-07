@@ -11,10 +11,14 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="${pageContext.request.contextPath}/servlet/login" method="get">
-        账号<input type="text" name="username"><br>
-        密码<input type="text" name="password"><br>
-        <input type="submit" value="登录">
-    </form>
+    <div style="text-align: center">
+        <form action="${pageContext.request.contextPath}/servlet/login" method="get">
+            <h2>
+                账号:<input type="text" name="username"><br>
+                密码:<input type="text" name="password"><br>
+                <input type="submit" value="登录">
+            </h2>
+        </form>
+    </div>
 </body>
 </html>

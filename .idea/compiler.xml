@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="G_Filter" />
+        <module name="G_LoginDemo" />
         <module name="D-Request" />
         <module name="B-Context" />
         <module name="C-Response" />
-        <module name="G_LoginDemo" />
         <module name="E-Cookie_Session" />
         <module name="F-JSPage" />
+        <module name="G_Filter" />
         <module name="A-HelloServlet" />
       </profile>
     </annotationProcessing>
