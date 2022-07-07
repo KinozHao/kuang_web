@@ -17,6 +17,7 @@
         <module>D-Request</module>
         <module>E-Cookie_Session</module>
         <module>F-JSPage</module>
+        <module>G_Filter</module>
     </modules>
 
     <!--依赖jar包-->
