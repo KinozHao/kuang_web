@@ -1,0 +1,32 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="true">
+  <!-- 注册hello servlet-->
+  <servlet>
+    <!--类的标识-->
+    <servlet-name>HelloServlet</servlet-name>
+    <!--实现servlet的java类路径-->
+    <servlet-class>top.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <!-- 为java程序提供映射 servlet的请求路径-->
+  <servlet-mapping>
+    <!--类的标识-->
+    <servlet-name>HelloServlet</servlet-name>
+    <!--指定映射位置在浏览器访问的位置-->
+    <url-pattern>/Servlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- 注册 error页面-->
+  <servlet>
+    <servlet-name>error</servlet-name>
+    <servlet-class>top.error.ErrorPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>error</servlet-name>
+    <!--当为/*时候 即输入不存在web资源自动跳转此页面-->
+    <url-pattern>/404</url-pattern>
+  </servlet-mapping>
+</web-app>

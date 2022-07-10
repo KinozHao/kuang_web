@@ -16,7 +16,7 @@ public class FilterBasic implements Filter {
         System.out.println("web server init");
     }
 
-    //filterChain 代表链
+    ///过滤方法 主要是对request和response进行一些处理，然后交给下一个过滤器或Servlet处理
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding("utf-8");

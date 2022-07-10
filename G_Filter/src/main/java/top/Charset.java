@@ -1,5 +1,6 @@
 package top;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -20,6 +21,7 @@ public class Charset extends HttpServlet {
         /*req.setCharacterEncoding("utf-8");
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=utf-8");*/
+        ServletContext context = this.getServletContext();
 
         PrintWriter out = resp.getWriter();
         out.write("中文乱码");
