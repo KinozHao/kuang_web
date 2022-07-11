@@ -19,7 +19,7 @@
         <module>F-JSPage</module>
         <module>G_Filter</module>
         <module>G_LoginDemo</module>
-        <module>H_Test</module>
+        <module>H_LoginWithSQL</module>
     </modules>
 
     <!--依赖jar包-->
