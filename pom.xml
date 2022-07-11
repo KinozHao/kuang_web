@@ -19,6 +19,7 @@
         <module>F-JSPage</module>
         <module>G_Filter</module>
         <module>G_LoginDemo</module>
+        <module>H_Test</module>
     </modules>
 
     <!--依赖jar包-->
@@ -71,6 +72,26 @@
             <version>1.1.2</version>
         </dependency>
 
+
+        <!--文件上传 以及io操作-->
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.8</version>
+        </dependency>
     </dependencies>
 
 

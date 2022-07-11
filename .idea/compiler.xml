@@ -10,11 +10,15 @@
         <module name="D-Request" />
         <module name="B-Context" />
         <module name="C-Response" />
+        <module name="H_Test" />
         <module name="E-Cookie_Session" />
         <module name="F-JSPage" />
         <module name="G_Filter" />
         <module name="A-HelloServlet" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="H_FileTransfer" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
