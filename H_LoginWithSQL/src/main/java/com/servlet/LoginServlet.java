@@ -1,9 +1,7 @@
 package com.servlet;
 
 import com.entity.User;
-import com.mysql.jdbc.StringUtils;
 import com.service.LoginServiceImpl;
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,7 +12,7 @@ import java.io.IOException;
 /**
  * @author kinoz
  * @Date 2022/7/11 - 16:37
- * @apiNote
+ * @apiNote 运行请确保tomcat的application context仅为/ 否则跳转success.jsp失败!!!!
  */
 public class LoginServlet extends HttpServlet {
 

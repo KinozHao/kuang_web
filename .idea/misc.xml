@@ -8,6 +8,7 @@
     <file type="web" url="file://$PROJECT_DIR$/D-Request" />
     <file type="web" url="file://$PROJECT_DIR$/E-Cookie_Session" />
     <file type="web" url="file://$PROJECT_DIR$/F-JSPage" />
+    <file type="web" url="file://$PROJECT_DIR$/H_FileUpload" />
     <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
   </component>
   <component name="MavenProjectsManager">
@@ -16,6 +17,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/A-HelloServlet/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/I_FileUpload/pom.xml" />
+        <option value="$PROJECT_DIR$/I_test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="jdk11.0.11" project-jdk-type="JavaSDK">

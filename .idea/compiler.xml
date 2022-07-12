@@ -8,17 +8,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="G_LoginDemo" />
         <module name="D-Request" />
+        <module name="H_LoginWithSQL" />
         <module name="B-Context" />
         <module name="C-Response" />
-        <module name="G_Filter" />
         <module name="E-Cookie_Session" />
         <module name="F-JSPage" />
-        <module name="H_LoginWithSQL" />
+        <module name="G_Filter" />
+        <module name="H_FileUpload" />
         <module name="A-HelloServlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="H_FileTransfer" target="11" />
+      <module name="I_FileUpload" target="11" />
+      <module name="I_test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
