@@ -8,12 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="G_LoginDemo" />
         <module name="D-Request" />
-        <module name="H_LoginWithSQL" />
         <module name="B-Context" />
         <module name="C-Response" />
+        <module name="G_Filter" />
+        <module name="H_Mail" />
         <module name="E-Cookie_Session" />
         <module name="F-JSPage" />
-        <module name="G_Filter" />
+        <module name="H_LoginWithSQL" />
         <module name="H_FileUpload" />
         <module name="A-HelloServlet" />
       </profile>

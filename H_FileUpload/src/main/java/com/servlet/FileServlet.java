@@ -18,30 +18,27 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Servlet implementation class FileSerlvet
- * 此项目依赖tomcat9 tomcat10更新为jakarta jar包 测试无效
+ * 此项目测试环境Tomcat9.0.64 正常运行
+ * Tomcat10.0.22 测试报错jar包问题
  */
 public class FileServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-     *      response)
-     */
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        // response.getWriter().append("Served at: ").append(request.getContextPath());
 
         // 判断上传的文件普通表单还是带文件的表单
+        // 上传文件使用post 不限制文件大小
         if (!ServletFileUpload.isMultipartContent(request)) {
             return;//终止方法运行,说明这是一个普通的表单,直接返回
         }
+
         //创建上传文件的保存路径,建议在WEB-INF路径下,安全,用户无法直接访间上传的文件;
-        String uploadPath =this.getServletContext().getRealPath("/WEB-INF/upload");
+        String uploadPath = this.getServletContext().getRealPath("/WEB-INF/upload");
         File uploadFile = new File(uploadPath);
         if (!uploadFile.exists()){
-            uploadFile.mkdir(); //创建这个月录
+            uploadFile.mkdir(); //创建这个目录
         }
 
         // 创建上传文件的保存路径，建议在WEB-INF路径下，安全，用户无法直接访问上传的文件
@@ -52,7 +49,7 @@ public class FileServlet extends HttpServlet {
         }
 
         // 处理上传的文件,一般都需要通过流来获取,我们可以使用 request, getInputstream(),原生态的文件上传流获取,十分麻烦
-        // 但是我们都建议使用 Apache的文件上传组件来实现, common-fileupload,它需要旅 commons-io组件;
+        // 但是我们都建议使用 Apache的文件上传组件来实现, common-fileupload,commons-io组件;
         try {
             // 创建DiskFileItemFactory对象，处理文件路径或者大小限制
             DiskFileItemFactory factory = getDiskFileItemFactory(file);
@@ -81,7 +78,6 @@ public class FileServlet extends HttpServlet {
             }
 
         } catch (FileUploadException e) {
-            // TODO 自动生成的 catch 块
             e.printStackTrace();
         }
     }
