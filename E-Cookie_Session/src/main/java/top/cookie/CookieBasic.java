@@ -24,7 +24,6 @@ public class CookieBasic extends HttpServlet {
         resp.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=utf-8");
 
-
         //服务器传客户端1个Cookie
         Cookie cookie = new Cookie("lastLoginTime",String.valueOf(System.currentTimeMillis()));//时间戳转换为字符串
         //设置cookie的有效期为一天

@@ -5,11 +5,11 @@
     <file url="file://$PROJECT_DIR$/A-HelloServlet/src/main/java/database/DbConnect.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A-HelloServlet/src/main/java/database/UtilsTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A-HelloServlet/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/B-Context/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/B-Context/src/main/java/datashare/AnotherServlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/B-Context/src/main/java/datashare/ReviewServlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/B-Context/src/main/java/datashare/ThirdServlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/B-Context/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B-Servlet-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B-Servlet-02/src/main/java/datashare/AnotherServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B-Servlet-02/src/main/java/datashare/ReviewServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B-Servlet-02/src/main/java/datashare/ThirdServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/B-Servlet-02/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/C-Response/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/C-Response/src/main/java/xiangying/FileDownload.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/C-Response/src/main/resources" charset="UTF-8" />
@@ -17,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/C-Response/src/main/webapp/index.jsp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java/qingqiu/LoginCdx.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/D-Request/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/E-Cookie_Session/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/E-Cookie_Session/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/F-JSPage/src/main/java" charset="UTF-8" />
@@ -26,9 +27,13 @@
     <file url="file://$PROJECT_DIR$/G_LoginDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/G_LoginDemo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_FileUpload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/H_FileUpload/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_LoginWithSQL/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_LoginWithSQL/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_Mail/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/H_Mail/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

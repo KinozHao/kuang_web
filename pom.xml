@@ -12,7 +12,7 @@
     <!--子模块-->
     <modules>
         <module>A-HelloServlet</module>
-        <module>B-Context</module>
+        <module>B-Servlet-02</module>
         <module>C-Response</module>
         <module>D-Request</module>
         <module>E-Cookie_Session</module>
@@ -54,7 +54,7 @@
 
 
 
-        <!--Tomcat9。0 Servlet依赖-->
+        <!--Tomcat9.0 Servlet依赖-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>

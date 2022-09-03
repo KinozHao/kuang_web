@@ -1,0 +1,71 @@
+<!--tomcat server latest web config environment-->
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="true">
+    <servlet>
+        <servlet-name>cookie1</servlet-name>
+        <servlet-class>top.cookie.CookieBasic</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookie1</servlet-name>
+        <url-pattern>/c1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookie2</servlet-name>
+        <servlet-class>top.cookie.StopCookie</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookie2</servlet-name>
+        <url-pattern>/c2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookie3</servlet-name>
+        <servlet-class>top.cookie.URLEncodeBasic</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookie3</servlet-name>
+        <url-pattern>/c3</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session1</servlet-name>
+        <servlet-class>top.session.SessionBasic</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session2</servlet-name>
+        <servlet-class>top.session.SessionGet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session2</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session3</servlet-name>
+        <servlet-class>top.session.StopSession</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session3</servlet-name>
+        <url-pattern>/s3</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <!--设置session的失效时间 单位/min-->
+        <session-timeout>1</session-timeout>
+    </session-config>
+</web-app>
