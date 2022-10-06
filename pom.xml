@@ -13,14 +13,13 @@
     <modules>
         <module>A-HelloServlet</module>
         <module>B-Servlet-02</module>
-        <module>C-Response</module>
+        <module>C_FileUpAndDown</module>
         <module>D-Request</module>
         <module>E-Cookie_Session</module>
         <module>F-JSPage</module>
         <module>G_Filter</module>
         <module>G_LoginDemo</module>
         <module>H_LoginWithSQL</module>
-        <module>H_FileUpload</module>
         <module>H_Mail</module>
     </modules>
 

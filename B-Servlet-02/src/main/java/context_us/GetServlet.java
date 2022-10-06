@@ -22,9 +22,9 @@ public class GetServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
 
-        ServletContext sct = this.getServletContext();
+        ServletContext servlet = this.getServletContext();
         //1.通过context获取一个流对象，指定配置文件在web中的路径
-        InputStream in = sct.getResourceAsStream("/WEB-INF/classes/jdbc.properties");
+        InputStream in = servlet.getResourceAsStream("/WEB-INF/classes/jdbc.properties");
         //2.读取流文件
         Properties prop = new Properties();
         prop.load(in);

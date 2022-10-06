@@ -12,7 +12,8 @@ import java.io.PrintWriter;
 /**
  * @author kinoz
  * @Date 2022/7/1 - 16:50
- * @apiNote 此类用于获取Context里的共享数据
+ * @apiNote 此类获取DataShare类中所提供的共享数据
+ * @see DataShare
  */
 public class ReviewServlet extends HttpServlet {
     @Override
@@ -24,11 +25,6 @@ public class ReviewServlet extends HttpServlet {
         String username = (String) con.getAttribute("username");
         PrintWriter out = resp.getWriter();
         out.println(username);
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 }

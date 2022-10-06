@@ -5,10 +5,10 @@
     <file type="web" url="file://$PROJECT_DIR$/A-HelloServlet" />
     <file type="web" url="file://$PROJECT_DIR$/B-Servlet-02" />
     <file type="web" url="file://$PROJECT_DIR$/C-Response" />
+    <file type="web" url="file://$PROJECT_DIR$/C_FileUpAndDown" />
     <file type="web" url="file://$PROJECT_DIR$/D-Request" />
     <file type="web" url="file://$PROJECT_DIR$/E-Cookie_Session" />
     <file type="web" url="file://$PROJECT_DIR$/F-JSPage" />
-    <file type="web" url="file://$PROJECT_DIR$/H_FileUpload" />
     <file type="web" url="file://$PROJECT_DIR$/H_Mail" />
     <file type="web" url="file://$PROJECT_DIR$/HelloServlet" />
   </component>
@@ -21,6 +21,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/C-Response/pom.xml" />
         <option value="$PROJECT_DIR$/I_FileUpload/pom.xml" />
         <option value="$PROJECT_DIR$/I_test/pom.xml" />
       </set>

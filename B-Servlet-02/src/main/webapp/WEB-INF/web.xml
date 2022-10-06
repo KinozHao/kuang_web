@@ -20,7 +20,36 @@
         <servlet-name>data2</servlet-name>
         <url-pattern>/data2</url-pattern>
     </servlet-mapping>
+    <!--请求转发-->
+    <servlet>
+        <servlet-name>rd</servlet-name>
+        <servlet-class>context_us.Rdispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rd</servlet-name>
+        <url-pattern>/rd</url-pattern>
+    </servlet-mapping>
+    <!--获取properties资源-->
+    <servlet>
+        <servlet-name>prop</servlet-name>
+        <servlet-class>context_us.GetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>prop</servlet-name>
+        <url-pattern>/prop</url-pattern>
+    </servlet-mapping>
 
+
+    <!--在datashare包下-->
+    <!--共享数据类-->
+    <servlet>
+        <servlet-name>data</servlet-name>
+        <servlet-class>datashare.DataShare</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>data</servlet-name>
+        <url-pattern>/data</url-pattern>
+    </servlet-mapping>
     <!--这些路径用于获取共享数据-->
     <servlet>
         <servlet-name>Review</servlet-name>
@@ -46,35 +75,5 @@
     <servlet-mapping>
         <servlet-name>Review3</servlet-name>
         <url-pattern>/review3</url-pattern>
-    </servlet-mapping>
-
-    <!--请求转发-->
-    <servlet>
-        <servlet-name>rd</servlet-name>
-        <servlet-class>context_us.Rdispatcher</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>rd</servlet-name>
-        <url-pattern>/rd</url-pattern>
-    </servlet-mapping>
-
-    <!--共享数据类-->
-    <servlet>
-        <servlet-name>data</servlet-name>
-        <servlet-class>context_us.DataShare</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>data</servlet-name>
-        <url-pattern>/data</url-pattern>
-    </servlet-mapping>
-
-    <!--获取properties资源-->
-    <servlet>
-        <servlet-name>prop</servlet-name>
-        <servlet-class>context_us.GetServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>prop</servlet-name>
-        <url-pattern>/prop</url-pattern>
     </servlet-mapping>
 </web-app>

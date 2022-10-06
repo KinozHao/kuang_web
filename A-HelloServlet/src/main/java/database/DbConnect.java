@@ -8,7 +8,7 @@ import java.sql.Statement;
 /**
  * @author kinoz
  * @Date 2022/6/30 - 21:05
- * @apiNote
+ * @apiNote 连接数据库进行查询
  */
 public class DbConnect {
     public static void main(String[] args) throws Exception {

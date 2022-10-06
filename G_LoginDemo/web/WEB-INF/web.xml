@@ -23,7 +23,7 @@
 
     <filter>
         <filter-name>charset</filter-name>
-        <filter-class>top.controller.CharsetFilter</filter-class>
+        <filter-class>top.filter.CharsetFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>charset</filter-name>
@@ -32,7 +32,7 @@
 
     <filter>
         <filter-name>sysFilter</filter-name>
-        <filter-class>top.utils.SysFilter</filter-class>
+        <filter-class>top.filter.SysFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>sysFilter</filter-name>

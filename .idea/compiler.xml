@@ -13,15 +13,15 @@
         <module name="H_LoginWithSQL" />
         <module name="H_Mail" />
         <module name="F-JSPage" />
-        <module name="C-Response" />
         <module name="G_LoginDemo" />
-        <module name="H_FileUpload" />
         <module name="B-Context" />
         <module name="A-HelloServlet" />
+        <module name="C_FileUpAndDown" />
         <module name="D-Request" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="C-Response" target="11" />
       <module name="H_FileTransfer" target="11" />
       <module name="I_FileUpload" target="11" />
       <module name="I_test" target="11" />

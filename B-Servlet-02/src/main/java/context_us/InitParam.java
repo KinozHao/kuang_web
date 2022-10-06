@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 /**
  * @author kinoz
  * @Date 2022/7/2 - 9:56
- * @apiNote 获取xml下提供的初始化参数 通过InitParameter
+ * @apiNote 通过InitParameter,获取web.xml下提供的初始化参数
  */
 public class InitParam extends HttpServlet {
     @Override

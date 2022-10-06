@@ -15,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/C-Response/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/C-Response/src/main/resources/DB.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/C-Response/src/main/webapp/index.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/C_FileUpAndDown/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/C_FileUpAndDown/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/java/qingqiu/LoginCdx.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/D-Request/src/main/resources" charset="UTF-8" />
@@ -26,8 +28,6 @@
     <file url="file://$PROJECT_DIR$/G_Filter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/G_LoginDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/G_LoginDemo/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/H_FileUpload/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/H_FileUpload/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_LoginWithSQL/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_LoginWithSQL/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/H_Mail/src/main/java" charset="UTF-8" />

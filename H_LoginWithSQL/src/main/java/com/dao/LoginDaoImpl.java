@@ -49,7 +49,7 @@ public class LoginDaoImpl implements LoginDao {
     public User getLoginUser_Spring(String name) throws Exception {
         String sql = "select * from cusinfo where name = ?";
         User user = jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), name);
-        // TODO: 2022/10/4 此数据如何处理? 
+        // TODO: 2022/10/4 此数据如何处理?
         Object[] param = {name};
         return user;
     }

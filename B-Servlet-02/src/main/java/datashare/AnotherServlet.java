@@ -12,7 +12,8 @@ import java.io.PrintWriter;
 /**
  * @author kinoz
  * @Date 2022/7/1 - 17:33
- * @apiNote 此类用于获取Context里的共享数据
+ * @apiNote 此类获取DataShare类中所提供的共享数据
+ * @see DataShare
  */
 public class AnotherServlet extends HttpServlet {
     @Override
