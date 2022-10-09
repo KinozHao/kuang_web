@@ -5,6 +5,7 @@ import com.dao.LoginDaoImpl;
 import com.dao.SQLDao;
 import com.entity.User;
 import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +50,7 @@ public class LoginServiceImpl implements LoginService{
 
     @Override
     public User getLoginUser_Spring(String name,String password) {
-;
+
         User loginUser = null;
         try {
             loginUser = loginDao.getLoginUser_Spring(name);
@@ -73,8 +74,10 @@ public class LoginServiceImpl implements LoginService{
         LoginServiceImpl user = new LoginServiceImpl();
         User yonghu1 = user.getLoginUser("admin", "123456");
         System.out.println(yonghu1.getMoney());
-        // TODO: 2022/10/4 使用spring sql存在问题 
-        User yonghu2 = user.getLoginUser_Spring("admin", "123456");
-        System.out.println(yonghu2.getMoney());
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
+
+        LoginServiceImpl loginService = context.getBean("loginServiceImpl", LoginServiceImpl.class);
+        User admin = loginService.getLoginUser("admin", "123456");
+        System.out.println(admin.getMoney());
     }
 }

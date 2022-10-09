@@ -13,4 +13,24 @@
       <servlet-name>upload</servlet-name>
       <url-pattern>/uploads.do</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>pic</servlet-name>
+        <servlet-class>com.verify.VerifyCode</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pic</servlet-name>
+        <url-pattern>/pic</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>res</servlet-name>
+        <servlet-class>com.down.FileDownload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>res</servlet-name>
+        <url-pattern>/down</url-pattern>
+    </servlet-mapping>
 </web-app>
